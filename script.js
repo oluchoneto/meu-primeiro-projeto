@@ -19,10 +19,6 @@ function jogada(casa) {
   }
 }
 
-function mudarCorFundo(cor) {
-  document.body.style.backgroundColor = cor;
-}
-
 function checaEmpate() {
   return tabuleiro.every(casa => casa !== '');
 }
@@ -53,3 +49,8 @@ function init() {
 }
 
 init();
+
+
+function mudarCorFundo(cor) {
+  document.body.style.backgroundColor = cor;
+}
