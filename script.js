@@ -11,10 +11,18 @@ function jogada(casa) {
   if (checaVitoria()) {
     alert('Jogador ' + jogadorAtual + ' venceu!');
     location.reload();
+  } else if (checaEmpate()) {
+    alert('O jogo terminou empatado!');
+    location.reload();
   } else {
     jogadorAtual = jogadorAtual === 'X' ? 'O' : 'X';
   }
 }
+
+function checaEmpate() {
+  return tabuleiro.every(casa => casa !== '');
+}
+
 
 function checaVitoria() {
   const possiveisVitorias = [
