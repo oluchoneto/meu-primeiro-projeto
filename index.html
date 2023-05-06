@@ -9,7 +9,7 @@
   <div class="container">
     <h1>Jogo da Velha</h1>
     <div id="tabuleiro">
-      <div class="casa" onclick="jogada(this)"></div>
+     <div class="casa" onclick="jogada(this)"></div>
       <div class="casa" onclick="jogada(this)"></div>
       <div class="casa" onclick="jogada(this)"></div>
       <div class="casa" onclick="jogada(this)"></div>
@@ -20,6 +20,10 @@
       <div class="casa" onclick="jogada(this)"></div>
     </div>
     <a href="instrucoes.html">Instruções</a>
+    <div class="background-options">
+      <button onclick="mudarCorFundo('white')">Fundo Branco</button>
+      <button onclick="mudarCorFundo('black')">Fundo Preto</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
