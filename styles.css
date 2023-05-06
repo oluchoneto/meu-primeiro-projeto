@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -25,4 +26,5 @@ body {
   align-items: center;
   font-size: 2em;
   cursor: pointer;
+  user-select: none;
 }
